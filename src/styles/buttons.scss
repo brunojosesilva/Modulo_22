@@ -1,0 +1,23 @@
+.button {
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none; // remove o __ da descrição do botão
+    text-align: center;
+    white-space: nowrap; // não deixa quebrar a linha
+
+    &--primeiro {
+        color: white;
+        background-color: #4f2ac3;
+    }
+
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
+
+    @media (max-width: 1024px) {
+        display: flex;
+        align-items: center;
+    }
+}

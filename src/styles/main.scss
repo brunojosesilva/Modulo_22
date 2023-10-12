@@ -1,4 +1,7 @@
 @use 'hero';
+@use 'informacoes';
+@use 'buttons';
+@use 'eventos';
 
 * {
     padding: 0;
@@ -6,6 +9,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: #fff;
+    list-style: none; // retira os pontos de todos os item
 }
 
 .container {
