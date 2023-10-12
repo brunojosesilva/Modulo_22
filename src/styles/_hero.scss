@@ -1,0 +1,50 @@
+.hero {
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/fundo.png); // imagem do fundo
+    background-repeat: no-repeat; // para não repetir a imagem de fundo
+    background-size: cover; // para a imagem completar todo o tamanho do container
+    position: relative; // somente devido o before abaixo
+
+    .container { // somente devido o before abaixo
+        position: relative;
+    }
+
+    &::before { // inclui pceudo elemento antes da imagem de fundo
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        content: '';
+        opacity: .7%;
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    &__logo {
+        margin: 0 auto; // para centralizar a imagem
+        height: 80px;
+        display: block; // sem isto a imagem não centraliza
+    }
+
+    @media (max-width: 640px) {
+        &__logo {
+            height: 40px;
+        }
+
+        &__text {
+            height: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
