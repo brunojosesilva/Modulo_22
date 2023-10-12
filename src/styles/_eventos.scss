@@ -1,9 +1,33 @@
+@use 'variaveis';
+
 .eventos {
     padding: 80px 0;
-    background-image: linear-gradient(#1b6ca7, #442bdb); // utilizado para colocar o degrade nas cores
+
+    &--frontend {
+        background-image: linear-gradient(variaveis.$corGradiente01, variaveis.$corGradiente02); // utilizado para colocar o degrade nas cores
+    }
+
+    &--ux {
+        background-image: linear-gradient(variaveis.$corGradiente02, variaveis.$corGradiente03); // utilizado para colocar o degrade nas cores
+    }
+
+    &--data {
+        background-image: linear-gradient(variaveis.$corGradiente03, variaveis.$corGradiente04); // utilizado para colocar o degrade nas cores
+    }
+
+    &--backend {
+        background-image: linear-gradient(variaveis.$corGradiente04, variaveis.$corGradiente03); // utilizado para colocar o degrade nas cores
+    }
+
+    &--imagem-na-esquerda {
+        .container {
+            flex-direction: row-reverse; // reverte os containeres
+        }
+    }
 
     .container {
         display: flex;
+        gap: 40px; // distancia entre os itens
     }
 
     &__imagem {
@@ -11,7 +35,6 @@
     }
 
     &__detalhes {
-        margin-right: 40px;
 
         &__titulo {
             font-size: 18px;

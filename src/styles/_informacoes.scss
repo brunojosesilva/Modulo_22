@@ -1,7 +1,9 @@
+@use 'variaveis';
+
 .informacoes {
-    border: 1px solid white;
+    border: 1px solid variaveis.$corDoTextoPadrao;
     padding: 16px 24px;
-    background-color: white;
+    background-color: variaveis.$corDoTextoPadrao;
     display: flex;
     justify-content: space-between;
 
@@ -11,10 +13,10 @@
 
         &__item {
             font-size: 14px;
-            color: #000;
+            color: variaveis.$corDoTextoSecundario;
 
             b {
-                color: #000;
+                color: variaveis.$corDoTextoSecundario;
                 font-size: 18px;
                 display: block; // usado para que ele não quebre a linha
             }

@@ -2,13 +2,14 @@
 @use 'informacoes';
 @use 'buttons';
 @use 'eventos';
+@use 'variaveis';
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    color: #fff;
+    color: variaveis.$corDoTextoPadrao;
     list-style: none; // retira os pontos de todos os item
 }
 
